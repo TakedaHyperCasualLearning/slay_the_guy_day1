@@ -1,18 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameEvent : MonoBehaviour
+public class GameEvent
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Action<GameObject> AddComponentList;
+    public Action<GameObject> RemoveComponentList;
+    public Func<int, List<CardBaseComponent>> DrawCard;
 }
